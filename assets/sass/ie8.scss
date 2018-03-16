@@ -1,115 +1,83 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
+@import 'libs/skel';
 
 /*
-	Big Picture by HTML5 UP
+	Stellar by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Form */
+/* Type */
 
-	form {
-		input[type="text"],
-		input[type="email"],
-		input[type="password"],
-		select,
-		textarea {
-			position: relative;
-			-ms-behavior: url('assets/js/ie/PIE.htc');
-			border: solid 1px;
-		}
+	body {
+		color: _palette(fg-bold);
 	}
 
 /* Button */
 
-	input[type="button"],
-	input[type="submit"],
-	input[type="reset"],
-	.button,
-	button {
+	.button {
 		position: relative;
-		-ms-behavior: url('assets/js/ie/PIE.htc');
+		border: solid 1px !important;
 
-		&.down {
-			text-indent: 0;
+		&.special {
+			border: none !important;
+		}
+	}
+
+/* Icon */
+
+	.icon {
+		&.major {
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+
+			&:before {
+				font-size: 4em;
+				border: 0;
+			}
+		}
+	}
+
+/* Spotlight */
+
+	.spotlight {
+		.image {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+
+			img {
+				position: relative;
+				-ms-behavior: url('assets/js/ie/PIE.htc');
+			}
+		}
+	}
+
+/* Features */
+
+	.features {
+		li {
+			width: 29%;
 		}
 	}
 
 /* Footer */
 
 	#footer {
-		color: #fff;
-	}
-
-/* Intro */
-
-	#intro {
-		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
-		background: url('../../images/intro.jpg');
-		background-size: cover;
-
-		.content {
-			position: relative;
-			z-index: 1;
-		}
-
-		&:after {
-			content: '';
-			background: url('images/overlay.png');
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			left: 0;
-			top: 0;
+		> * {
+			width: 50%;
+			margin-left: 0;
 		}
 	}
 
-/* One */
+/* Main */
 
-	#one {
-		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
-		background: url('../../images/one.jpg');
-		background-size: cover;
-
-		.content {
-			position: relative;
-			z-index: 1;
-		}
-
-		&.left:before,
-		&.right:after {
-			content: '';
-			background: url('images/overlay.png');
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			left: 0;
-			top: 0;
-		}
-	}
-
-/* Two */
-
-	#two {
-		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
-		background: url('../../images/two.jpg');
-		background-size: cover;
-
-		.content {
-			position: relative;
-			z-index: 1;
-		}
-
-		&.left:before,
-		&.right:after {
-			content: '';
-			background: url('images/overlay.png');
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			left: 0;
-			top: 0;
+	#main {
+		> .main {
+			> .image.main:first-child {
+				margin-top: 0;
+				margin-left: 0;
+				width: 100%;
+			}
 		}
 	}

@@ -1,39 +1,62 @@
 /*
-	Big Picture by HTML5 UP
+	Stellar by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Loader */
+/* Spotlight */
 
-	body:before, body:after {
-		display: none !important;
-	}
-
-/* Gallery */
-
-	.gallery:after {
+	.spotlight:after {
 		content: '';
 		display: block;
 		clear: both;
 	}
 
-	.gallery article {
+	.spotlight .content {
+		float: left;
+		width: 60%;
+	}
+
+	.spotlight .image {
 		float: left;
 	}
 
-/* Main */
+/* Features */
 
-	.main.fullscreen {
-		min-height: 0;
+	.features:after {
+		content: '';
+		display: block;
+		clear: both;
 	}
 
-	.main.style1 > .content {
-		margin: 0 auto;
+	.features li {
+		float: left;
 	}
 
-/* Poptrox */
+/* Statistics */
 
-	.poptrox-popup .loader {
-		display: none !important;
+	.statistics {
+		display: inline-block;
+		width: auto;
+	}
+
+		.statistics:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.statistics li {
+			float: left;
+			padding: 1.5em 2.5em;
+		}
+
+/* Footer */
+
+	#footer > * {
+		float: left;
+	}
+
+	#footer .copyright {
+		clear: both;
 	}
