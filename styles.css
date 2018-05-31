@@ -172,6 +172,7 @@ body > div.navbar-fixed > nav > div > a > img{
     box-shadow: 1px 1px 1px  #888888;
     transition: .5s ease;
     backface-visibility: hidden;
+    border: 9px solid #E32075;
 }
 
 .middle {
