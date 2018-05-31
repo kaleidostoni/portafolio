@@ -221,7 +221,7 @@ body > div.navbar-fixed > nav > div > a > img{
 .content2{
      /* The image used */
      background-image: url("assets/images/skills.jpg");
-
+     padding-top: 20px;
      /* Set a specific height */
      max-width: 3600px;
      min-height: 800px; 
@@ -246,7 +246,7 @@ body > div.navbar-fixed > nav > div > a > img{
 /*CONTACT*/
 
 .contact{
-    height: 500px;
+    height: 550px;
     background-image: url("assets/images/squares.jpg")
 }
 
@@ -259,6 +259,23 @@ a >.fa-github, .fa-linkedin, .fa-at{
     color:#E32075;
 }
 
-.contact-h, .contact-s{
+.about-h, .work-h, .skills-h, .contact-h{
     width:400px;
+    padding-top:60px;
+}
+
+/*FOOTER*/
+
+.footer{
+    background-color: #F3BE25;
+    height: 110px;
+}
+
+.heart{
+    color:#E32075;
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Inconsolata', monospace;
 }
