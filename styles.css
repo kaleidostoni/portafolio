@@ -217,6 +217,18 @@ body > div.navbar-fixed > nav > div > a > img{
 
 }
 
+.description{
+    background-color:#F3BE25;
+    height: 30px;
+    margin-top: 10px;
+    width:300px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.4em;
+    padding-left: 10px;
+    margin-left:4px;
+    box-shadow: 3px 3px 3px  #888888;
+}
+
 /*SKILLS*/
 .content2{
      /* The image used */
